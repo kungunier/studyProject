@@ -16,7 +16,7 @@ public class DBUtils {
     //定义数据库的驱动信息
     private static final String DRIVER = "com.mysql.jdbc.Driver";
     //定义访问数据库的地址
-    private static final String URL = "jdbc:mysql://localhost:3306/db";
+    private static final String URL = "jdbc:mysql://localhost:3306/test1?useSSL=false";
     //定义数据库的链接
     private static Connection con = null;
     //定义SQL语句的执行对象
@@ -164,7 +164,7 @@ public class DBUtils {
      * 关闭数据库资源
      *
      */
-    public void CloseDB(){
+    public void closeDB(){
         if (resultSet !=null){
             try {
                 resultSet.close();
